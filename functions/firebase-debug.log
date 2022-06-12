@@ -1,0 +1,152 @@
+[debug] [2022-06-12T20:33:33.996Z] ----------------------------------------------------------------------
+[debug] [2022-06-12T20:33:33.998Z] Command:       /home/mrandrej/.nvm/versions/node/v16.15.0/bin/node /usr/local/bin/firebase emulators:start --only functions
+[debug] [2022-06-12T20:33:33.998Z] CLI Version:   11.0.1
+[debug] [2022-06-12T20:33:33.999Z] Platform:      linux
+[debug] [2022-06-12T20:33:33.999Z] Node Version:  v16.15.0
+[debug] [2022-06-12T20:33:33.999Z] Time:          Sun Jun 12 2022 22:33:33 GMT+0200 (Central European Summer Time)
+[debug] [2022-06-12T20:33:33.999Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-12T20:33:34.046Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-12T20:33:34.046Z] > authorizing via signed-in user (mrandrej.ilievski@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[debug] [2022-06-12T20:33:34.056Z] [hub] writing locator at /tmp/hub-cramertradingbotai.json
+[warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
+[info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-12T20:33:34.069Z] defaultcredentials: writing to file /home/mrandrej/.config/firebase/mrandrej_ilievski_gmail.com_application_default_credentials.json
+[debug] [2022-06-12T20:33:34.070Z] Setting GAC to /home/mrandrej/.config/firebase/mrandrej_ilievski_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/mrandrej/.config/firebase/mrandrej_ilievski_gmail.com_application_default_credentials.json"}}
+[debug] [2022-06-12T20:33:34.072Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/cramertradingbotai/adminSdkConfig [none]
+[debug] [2022-06-12T20:33:34.357Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/cramertradingbotai/adminSdkConfig 200
+[debug] [2022-06-12T20:33:34.358Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/cramertradingbotai/adminSdkConfig {"projectId":"cramertradingbotai","storageBucket":"cramertradingbotai.appspot.com"}
+[debug] [2022-06-12T20:33:34.400Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-12T20:33:34.401Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-12T20:33:34.401Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","/home/mrandrej/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"/home/mrandrej/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-12T20:33:34.480Z] Web / API server started at localhost:5002
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:5002\n"}}
+[info] i  functions: Watching "/home/mrandrej/Projects/AntiCramer/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/mrandrej/Projects/AntiCramer/functions\" for Cloud Functions..."}}
+[debug] [2022-06-12T20:33:34.664Z] Validating nodejs source
+[debug] [2022-06-12T20:33:35.447Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "openai": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-12T20:33:35.447Z] Building nodejs source
+[debug] [2022-06-12T20:33:35.447Z] Analyzing nodejs backend spec
+[debug] [2022-06-12T20:33:35.448Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-12T20:33:35.541Z] Serving at port 9007
+
+[debug] [2022-06-12T20:33:35.589Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-12T20:33:35.595Z] shutdown requested via /__/quitquitquit
+
+[info] ✔  functions[us-central1-helloWorld]: http function initialized (http://localhost:5001/cramertradingbotai/us-central1/helloWorld). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/cramertradingbotai/us-central1/helloWorld)."}}
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:5002                │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ localhost:5001 │ http://localhost:5002/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2022-06-12T20:33:39.008Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-06-12T20:33:39.008Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-06-12T20:33:39.008Z] Accepted request GET /cramertradingbotai/us-central1/helloWorld --> us-central1-helloWorld
+[info] i  functions: Loaded environment variables from .env. 
+[debug] [2022-06-12T20:33:39.017Z] [worker-pool] addWorker(us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-helloWorld)"}}
+[debug] [2022-06-12T20:33:39.017Z] [worker-pool] Adding worker with key us-central1-helloWorld, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-helloWorld, total=1"}}
+[debug] [2022-06-12T20:33:39.018Z] [worker-pool] submitWork(triggerId=us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-helloWorld)"}}
+[debug] [2022-06-12T20:33:39.018Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: Assigning socketPath: /tmp/fire_emu_40079.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: Assigning socketPath: /tmp/fire_emu_40079.sock"}}
+[debug] [2022-06-12T20:33:39.018Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: BUSY"}}
+[debug] [2022-06-12T20:33:39.577Z] [runtime-status] [40079] Functions runtime initialized. {"cwd":"/home/mrandrej/Projects/AntiCramer/functions","node_version":"16.15.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Functions runtime initialized. {\"cwd\":\"/home/mrandrej/Projects/AntiCramer/functions\",\"node_version\":\"16.15.0\"}"}}
+[debug] [2022-06-12T20:33:39.578Z] [runtime-status] [40079] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Disabled runtime features: undefined"}}
+[debug] [2022-06-12T20:33:39.579Z] [runtime-status] [40079] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.580Z] [runtime-status] [40079] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.580Z] [runtime-status] [40079] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-06-12T20:33:39.581Z] [runtime-status] [40079] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.601Z] [runtime-status] [40079] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-06-12T20:33:39.602Z] [runtime-status] [40079] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.21.2","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-06-12T20:33:39.603Z] [runtime-status] [40079] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.603Z] [runtime-status] [40079] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.603Z] [runtime-status] [40079] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.21.2","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.21.2\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-06-12T20:33:39.604Z] [runtime-status] [40079] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/home/mrandrej/Projects/AntiCramer/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-06-12T20:33:39.616Z] [runtime-status] [40079] Beginning invocation function helloWorld! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Beginning invocation function helloWorld!"}}
+[info] i  functions: Beginning execution of "helloWorld" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Beginning execution of \"helloWorld\""}}
+[debug] [2022-06-12T20:33:39.617Z] [runtime-status] [40079] Running helloWorld in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Running helloWorld in signature http"}}
+[debug] [2022-06-12T20:33:39.619Z] [runtime-status] [40079] Attempting to listen to socketPath: /tmp/fire_emu_40079.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Attempting to listen to socketPath: /tmp/fire_emu_40079.sock"}}
+[debug] [2022-06-12T20:33:39.621Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-06-12T20:33:39.621Z] [functions] Got req.url=/cramertradingbotai/us-central1/helloWorld, mapping to path=/ {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/cramertradingbotai/us-central1/helloWorld, mapping to path=/"}}
+[debug] [2022-06-12T20:33:39.625Z] [runtime-status] [40079] Ephemeral server handling GET request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Ephemeral server handling GET request"}}
+[debug] [2022-06-12T20:33:41.775Z] [runtime-status] [40079] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"[runtime-status] [40079] Ephemeral server survived."}}
+[info] i  functions: Finished "helloWorld" in ~2s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-helloWorld"},"extension":{},"message":"Finished \"helloWorld\" in ~2s"}}
+[debug] [2022-06-12T20:33:41.776Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: IDLE"}}
+[debug] [2022-06-12T20:33:41.776Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2022-06-12T20:33:57.810Z] File /home/mrandrej/Projects/AntiCramer/functions/index.js changed, reloading triggers {"metadata":{"emulator":{"name":"functions"},"message":"File /home/mrandrej/Projects/AntiCramer/functions/index.js changed, reloading triggers"}}
+[debug] [2022-06-12T20:33:58.811Z] [worker-pool] Shutting down IDLE worker (us-central1-helloWorld) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Shutting down IDLE worker (us-central1-helloWorld)"}}
+[debug] [2022-06-12T20:33:58.811Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: FINISHING {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: FINISHING"}}
+[debug] [2022-06-12T20:33:58.812Z] Validating nodejs source
+[debug] [2022-06-12T20:33:59.809Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "lint": "eslint .",
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0",
+    "openai": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-12T20:33:59.809Z] Building nodejs source
+[debug] [2022-06-12T20:33:59.809Z] Analyzing nodejs backend spec
+[debug] [2022-06-12T20:33:59.810Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-12T20:33:59.816Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: exited {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: exited"}}
+[debug] [2022-06-12T20:33:59.816Z] [worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: FINISHED {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-helloWorld-52cd1c20-0a5a-4b56-97aa-bc658eed6ca1]: FINISHED"}}
+[debug] [2022-06-12T20:33:59.900Z] Serving at port 9007
+
+[debug] [2022-06-12T20:33:59.950Z] Got response from /__/functions.yaml {"endpoints":{"helloWorld":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"helloWorld"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-12T20:33:59.956Z] shutdown requested via /__/quitquitquit
+
